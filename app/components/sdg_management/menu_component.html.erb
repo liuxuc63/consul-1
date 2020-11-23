@@ -5,4 +5,11 @@
       <strong><%= t("sdg_management.menu.sdg_content") %></strong>
     <% end %>
   </li>
+
+  <% SDG::Related::RELATABLE_TYPES.each do |type| %>
+    <%= relatable_list_item(type) do %>
+      <span class="icon-<%= table_name(type) %>"></span>
+      <strong><%= t("sdg_management.menu.#{table_name(type)}") %></strong>
+    <% end %>
+  <% end %>
 </ul>
