@@ -11,5 +11,15 @@ FactoryBot.define do
     sequence(:code, 1)        { |n| "#{n}.#{n}.#{n}" }
     sequence(:title, 1)       { |n| "Local Target #{n} title" }
     sequence(:description, 1) { |n| "Help for Local Target #{n}" }
+
+    trait :find_target do
+      after :build do |local_target|
+        if local_target.code.present?
+          code = local_target.code[0..local_target.code.rindex(/\..+/) - 1]
+
+          local_target.target = SDG::Target.find_by(code: code)
+        end
+      end
+    end
   end
 end
