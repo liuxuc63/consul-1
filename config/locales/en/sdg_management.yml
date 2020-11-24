@@ -11,6 +11,8 @@ en:
       polls: "Polls"
       proposals: "Proposals"
       sdg_content: "Goals and Targets"
+    actions:
+      edit: "Manage goals and targets"
     local_targets:
       create:
         notice: "Local target created successfully"

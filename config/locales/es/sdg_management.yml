@@ -11,6 +11,8 @@ es:
       polls: "Votaciones"
       proposals: "Propuestas"
       sdg_content: "Objetivos y Metas"
+    actions:
+      edit: "Asignar objetivos y metas"
     local_targets:
       create:
         notice: "Meta localizada creada correctamente"
