@@ -1,4 +1,8 @@
-<%= header %>
+<%= header options: { class: "inline-block" } %>
+
+<%= link_to t("sdg_management.local_targets.index.new"),
+            new_sdg_management_local_target_path,
+            class: "button hollow float-right" %>
 
 <%= render SDGManagement::SubnavigationComponent.new(current: :local_targets) do %>
   <table>
