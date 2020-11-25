@@ -1,0 +1,32 @@
+<h2><%= t("admin.sdg_managers.search.title") %></h2>
+
+<%= render "admin/shared/user_search", url: search_admin_sdg_managers_path %>
+
+<div id="sdg_managers">
+  <% if @users.any? %>
+    <h3><%= page_entries_info @users %></h3>
+
+    <table>
+      <thead>
+        <th scope="col"><%= t("admin.sdg_managers.index.name") %></th>
+        <th scope="col"><%= t("admin.sdg_managers.index.email") %></th>
+        <th scope="col"><%= t("admin.shared.actions") %></th>
+      </thead>
+      <tbody>
+      <% @users.each do |user| %>
+        <tr>
+          <td><%= user.name %></td>
+          <td><%= user.email %></td>
+          <td>
+            <%= render Admin::Roles::TableActionsComponent.new(user.sdg_manager || user.build_sdg_manager) %>
+          </td>
+        </tr>
+      <% end %>
+      </tbody>
+    </table>
+  <% else %>
+    <div class="callout alert margin">
+      <%= t("admin.shared.no_search_results") %>
+    </div>
+  <% end %>
+</div>

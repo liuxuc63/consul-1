@@ -620,6 +620,16 @@ es:
         add: Añadir como gestor
       search:
         title: "Gestores: Búsqueda de usuarios"
+    sdg_managers:
+      index:
+        title: Gestores ODS
+        name: Nombre
+        email: Email
+        no_sdg_managers: No hay gestores ODS.
+      manager:
+        add: Añadir como gestor ODS
+      search:
+        title: "Gestores ODS: Búsqueda de usuarios"
     menu:
       activity: Actividad de moderadores
       admin: Menú de administración
@@ -636,6 +646,7 @@ es:
       hidden_users: Usuarios bloqueados
       administrators: Administradores
       managers: Gestores
+      managers: Gestores ODS
       moderators: Moderadores
       messaging_users: Mensajes a usuarios
       newsletters: Newsletters

@@ -621,6 +621,16 @@ en:
         add: Add
       search:
         title: "Managers: User search"
+    sdg_managers:
+      index:
+        title: SDG Managers
+        name: Name
+        email: Email
+        no_sdg_managers: There are no SDG Managers.
+      sdg_manager:
+        add: Add
+      search:
+        title: "SDG Managers: User search"
     menu:
       activity: Moderator activity
       admin: Admin menu
@@ -637,6 +647,7 @@ en:
       hidden_users: Hidden users
       administrators: Administrators
       managers: Managers
+      sdg_managers: SDG Managers
       moderators: Moderators
       messaging_users: Messages to users
       newsletters: Newsletters
