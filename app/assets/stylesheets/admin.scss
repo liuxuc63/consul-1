@@ -135,6 +135,10 @@ $sidebar-active: #f4fcd0;
     @include breakpoint(medium) {
       height: auto !important;
       padding-top: $line-height / 2;
+
+      .is-submenu-item {
+        padding-top: 0;
+      }
     }
 
     a {
